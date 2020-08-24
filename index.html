@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Bar Charts</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+      $("#btn1").click(function(){
+        $("#test2").text($("#test1").val());
+      });
+    });</script>
   </head>
   <body>
     <h1>Bar Charts</h1>
+
+    <p>Input field: <input type="text" id="test1" value=""></p>
+    <button id = "btn1">Set Input</button>
+    <p>Input</p>
+    <p id="test2"></p>
   </body>
 </html>
